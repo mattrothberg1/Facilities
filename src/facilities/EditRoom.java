@@ -45,11 +45,11 @@ public class EditRoom extends javax.swing.JPanel {
 
         jLabel4.setText("Department*");
 
-        jTextField1.setText("jTextField1");
+        jTextField1.setText("Facility Name");
 
-        jTextField2.setText("jTextField2");
+        jTextField2.setText("Room Number");
 
-        jTextField3.setText("jTextField3");
+        jTextField3.setText("Department");
 
         jButton1.setText("Save- Return Home");
 
@@ -72,7 +72,7 @@ public class EditRoom extends javax.swing.JPanel {
                             .addComponent(jLabel4))
                         .addGap(62, 62, 62)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                            .addComponent(jTextField1)
                             .addComponent(jTextField2)
                             .addComponent(jTextField3))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
