@@ -15,7 +15,13 @@ public class EditRoom extends javax.swing.JPanel {
      * Creates new form EditRoom
      */
     public EditRoom() {
+        //written by Matt Rothberg 
+        // Need to created the methods that are called as well as adding parameters to know which facility,room,dept to retrieve
         initComponents();
+        jTextField1 = getFacility(); 
+        jTextField2 = getRoomNumber(); 
+        jTextField3 = getDepartment();
+        
     }
 
     /**
@@ -52,8 +58,18 @@ public class EditRoom extends javax.swing.JPanel {
         jTextField3.setText("Department");
 
         jButton1.setText("Save- Return Home");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Return Without Saving");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -107,6 +123,24 @@ public class EditRoom extends javax.swing.JPanel {
                 .addContainerGap(62, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        //Written by Matt Rothberg 
+        //Once this button is pressed, need to save the changes and then go home 
+        setFacility() = jTextField1; 
+        setRoomNumber() = jTextField2; 
+        setDepartment() = jTextField3; 
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        //Matt Rothberg
+        //When this button is pressed, you need to return to the previous screen without saving anything 
+        
+        //put method here 
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
